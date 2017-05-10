@@ -136,9 +136,15 @@ header {
 	padding: 14px 40px;
 }
 
-.btn-primary:hover {
+.btn-primary:hover, .btn-primary.active, .btn-primary:active, .open>.dropdown-toggle.btn-primary, .btn-primary.focus, .btn-primary:focus, .btn-success:active:focus {
 	background-color: #587F2D;
 }
+
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {
+	background-color: #587F2D;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 4px rgba(154, 218, 83, 0.6);
+}
+
 
 .content {
 	background: #ffffff;
