@@ -212,6 +212,7 @@ header {
 	.navbar-brand {
 		display:inline-block;
 		float:none;
+		height:auto;
 	}
 	.mob-pad-30 {
 		padding-top: 30px;
