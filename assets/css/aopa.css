@@ -168,10 +168,15 @@ header {
 .navbar {
 	background: none;
 	border: none;
+	margin-bottom: 0;
 }
 
 .navbar-brand {
 	z-index:0;
+}
+
+header .navbar-nav {
+	padding-top: 15px;
 }
 
 .navbar-nav > li > a  {
@@ -202,6 +207,42 @@ header {
 
 .navbar-form {
 	border: none;
+}
+
+.form-control {
+	font-size: 16px;
+	border-radius: 0;
+	height: auto;
+	padding: 12px;
+}
+
+.form-group label {
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.form-control:focus,
+textarea:focus,
+input[type="text"]:focus,
+input[type="textarea"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+  border-color: #9ADA53;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 4px rgba(154, 218, 83, 0.6);
+  outline: 0 none;
 }
 
 
