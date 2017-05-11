@@ -302,3 +302,10 @@ input[type="color"]:focus,
 		height: auto;
 	}
 }
+
+
+#img-services {
+	width: 167px;
+	height: 167px;
+	background: url('assets/images/services-img.png') no-repeat;
+}
