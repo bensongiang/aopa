@@ -49,6 +49,10 @@ p.quote {
 	font-style: italic;
 }
 
+.content p, .content ul li {
+	font-size: 18px;
+}
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
@@ -63,6 +67,7 @@ header {
 	padding-bottom: 30px;
 }
 
+/*
 .content ul {
   list-style: none;
   padding: 0;
@@ -80,6 +85,7 @@ header {
   letter-spacing: 5px;
   color: #9ADA53; 
 }
+*/
 
 /* Spacing */
 .pad-top-15 {
@@ -103,12 +109,17 @@ header {
 	padding-top: 30px;
 }
 
+.content {
+	/*For sticky footer*/
+	margin-bottom: 220px;
+}
+
 .footer {
-  /*position: absolute;
-  bottom: 0;*/
+  position: absolute;
+  bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: auto;
+  height: 220px;
   background-color: #3D3D3D;
   color: #ffffff;
 }
@@ -262,6 +273,15 @@ input[type="color"]:focus,
   outline: 0 none;
 }
 
+@media screen and (max-width: 992px) {
+	.footer {
+		height: 276px;
+	}
+	.content {
+		margin-bottom: 276px;
+	}
+}
+
 
 @media screen and (max-width: 768px) {
 	.navbar-header {
@@ -295,13 +315,15 @@ input[type="color"]:focus,
 		text-align: center;
 
 	}
-}
-
-@media screen and (min-width: 768px) {
 	.footer {
-		height: auto;
+		height: 525px;
+	}
+	.content {
+		margin-bottom: 525px;
 	}
 }
+
+
 
 
 #img-services {
