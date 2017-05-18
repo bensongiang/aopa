@@ -358,7 +358,7 @@ input[type="color"]:focus,
     border-color: #9ADA53;
 }
 
-span.tagsort-active  {
+span.tagsort-active, span.active  {
 	color: #ffffff;
     background: #9ADA53;
 	border-color: #9ADA53;
