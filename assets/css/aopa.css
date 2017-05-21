@@ -341,6 +341,14 @@ a:focus, a:hover {
 	background: url('assets/images/services-img.png') no-repeat;
 }
 
+.faq-entry {
+	padding-bottom: 30px;
+}
+
+.faq-entry h2 {
+	padding-top: 15px;
+}
+
 @media screen and (max-width: 992px) {
 	.footer {
 		height: 276px;
