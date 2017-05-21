@@ -301,10 +301,22 @@ input[type="color"]:focus,
     transition: all .2s ease-in-out;
 }
 
-.tags-container span:hover {
-	color: #ffffff;
-    background: #9ADA53;
-    border-color: #9ADA53;
+
+
+@media (hover:hover) {
+	.tags-container span:hover {
+		color: #ffffff;
+	    background: #9ADA53;
+	    border-color: #9ADA53;
+	}
+}
+
+@media (hover:none) {
+	.tags-container span:hover {
+	    color: #9B9B9B;
+	    background: #ffffff;
+	    border-color: #9B9B9B;
+	}
 }
 
 span.tagsort-active, span.active  {
