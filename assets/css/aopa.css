@@ -306,7 +306,7 @@ input[type="color"]:focus,
 }
 
 
-
+/*CSS fix for sticky hover*/
 @media (hover:hover) {
 	.tags-container span:hover {
 		color: #ffffff;
@@ -363,6 +363,15 @@ a:focus, a:hover {
 
 .faq-entry h2 {
 	padding-top: 15px;
+}
+
+.content #links a {
+	display: block;
+	float: left;
+}
+
+.content #links img {
+	max-width: 150px;
 }
 
 @media screen and (max-width: 992px) {

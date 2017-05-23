@@ -32,6 +32,8 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="assets/js/w3data.js"></script>
+    <link rel="stylesheet" href="assets/css/blueimp-gallery.min.css">
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -56,11 +58,13 @@
     </div><!--bg-banner-->
     <div class="content">
       <div class="container">
-        <div class="row pad-bot-30">
-          <div class="col-xs-12 pad-bot-30">
+        <div class="row">
+          <div class="col-xs-12">
             <h1>Services</h1>
-            <p>Yaping Chen is an experienced acupuncturist, herbalist, and traditional Chinese medicine practitioner. She has had extensive training in CranioSacral Therapy, which is a gentle, hands-on method of evaluating and enhancing the functioning of the craniosacral system. Yaping Chen is also licensed as a CMT, and can incorporate tuina, polarity, and acupressure massage modalities into a treatment program.</p>
-            <h2 class="pad-top-30">Services Offered</h2>
+          </div>
+        </div>
+        <div class="row pad-bot-30">
+          <div class="col-xs-12 col-md-4 pad-bot-30">
             <ul>
               <li>Acupuncture</li>
               <li>Herbal Medicine</li>
@@ -71,14 +75,75 @@
               <li>Moxibustion</li>
               <li>Ear Seeds</li>
             </ul>
+            <p><a href="faq.html#insurance">Insurance is accepted.</a></p>
+          </div>
+          <div class="col-xs-11 col-xs-offset-1 col-md-offset-0 col-md-8">
+            <div id="links">
+                <a href="assets/images/gallery/yaping-acupuncture-37.jpg" title="Acupuncture Services">
+                    <img src="assets/images/gallery/yaping-acupuncture-37_thumb.jpg" alt="Acupuncture Services">
+                </a>
+                <a href="assets/images/gallery/yaping-acupuncture-39.jpg" title="Acupuncture Services">
+                    <img src="assets/images/gallery/yaping-acupuncture-39_thumb.jpg" alt="Acupuncture Services">
+                </a>
+                <a href="assets/images/gallery/yaping-acupuncture-41.jpg" title="Acupuncture Services">
+                    <img src="assets/images/gallery/yaping-acupuncture-41_thumb.jpg" alt="Acupuncture Services">
+                </a>
+                <a href="assets/images/gallery/yaping-acupuncture-42.jpg" title="Acupuncture Services">
+                    <img src="assets/images/gallery/yaping-acupuncture-42_thumb.jpg" alt="Acupuncture Services">
+                </a>
+                <a href="assets/images/gallery/yaping-craniosacral-therapy-31.jpg" title="CranioSacral Therapy">
+                    <img src="assets/images/gallery/yaping-craniosacral-therapy-31_thumb.jpg" alt="CranioSacral Therapy">
+                </a>
+                <a href="assets/images/gallery/yaping-craniosacral-therapy-32.jpg" title="CranioSacral Therapy">
+                    <img src="assets/images/gallery/yaping-craniosacral-therapy-32_thumb.jpg" alt="CranioSacral Therapy">
+                </a>
+                <a href="assets/images/gallery/yaping-craniosacral-therapy-33.jpg" title="CranioSacral Therapy">
+                    <img src="assets/images/gallery/yaping-craniosacral-therapy-33_thumb.jpg" alt="CranioSacral Therapy">
+                </a>
+                <a href="assets/images/gallery/yaping-craniosacral-therapy-35.jpg" title="CranioSacral Therapy">
+                    <img src="assets/images/gallery/yaping-craniosacral-therapy-35_thumb.jpg" alt="CranioSacral Therapy">
+                </a>
+                <a href="assets/images/gallery/yaping-tuina-massage-11.jpg" title="Tuina Massage">
+                    <img src="assets/images/gallery/yaping-tuina-massage-11_thumb.jpg" alt="Tuina Massage">
+                </a>
+                <a href="assets/images/gallery/yaping-tuina-massage-13.jpg" title="Tuina Massage">
+                    <img src="assets/images/gallery/yaping-tuina-massage-13_thumb.jpg" alt="Tuina Massage">
+                </a>
+                <a href="assets/images/gallery/yaping-tuina-massage-15.jpg" title="Tuina Massage">
+                    <img src="assets/images/gallery/yaping-tuina-massage-15_thumb.jpg" alt="Tuina Massage">
+                </a>
+                <a href="assets/images/gallery/yaping-tuina-massage-21.jpg" title="Tuina Massage">
+                    <img src="assets/images/gallery/yaping-tuina-massage-21_thumb.jpg" alt="Tuina Massage">
+                </a>
+            </div>
           </div>
         </div><!--row-->
       </div><!--container-->
     </div><!--content-->
+    <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+        <div class="slides"></div>
+        <h3 class="title"></h3>
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="close">×</a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
+    </div>
     <div w3-include-html="includes/_footer.html"></div>
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/blueimp-gallery.min.js"></script>
+    <script>
+      document.getElementById('links').onclick = function (event) {
+          event = event || window.event;
+          var target = event.target || event.srcElement,
+              link = target.src ? target.parentNode : target,
+              options = {index: link, event: event},
+              links = this.getElementsByTagName('a');
+          blueimp.Gallery(links, options);
+      };
+      </script>
     <script>
       w3IncludeHTML();
     </script>
