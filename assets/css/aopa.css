@@ -129,7 +129,7 @@ header {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 220px;
+  height: 229px;
   background-color: #3D3D3D;
   color: #ffffff;
 }
@@ -143,6 +143,10 @@ header {
 .footer .navbar-nav li a:hover {
 	background: none;
 
+}
+
+.footer p {
+	margin-bottom: 5px;
 }
 
 .box-shadow {
@@ -363,7 +367,7 @@ a:focus, a:hover {
 
 @media screen and (max-width: 992px) {
 	.footer {
-		height: 276px;
+		height: 285px;
 	}
 	.content {
 		margin-bottom: 276px;
@@ -404,7 +408,7 @@ a:focus, a:hover {
 
 	}
 	.footer {
-		height: 525px;
+		height: 535px;
 	}
 	.content {
 		margin-bottom: 525px;
