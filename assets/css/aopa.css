@@ -371,7 +371,7 @@ a:focus, a:hover {
 }
 
 .content #links img {
-	max-width: 150px;
+	max-width: 150px !important;
 }
 
 @media screen and (max-width: 992px) {
