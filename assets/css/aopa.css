@@ -305,6 +305,11 @@ input[type="color"]:focus,
     transition: all .2s ease-in-out;
 }
 
+.tags-container span:active {
+	background: #6a9a35 !important;
+	border-color: #6a9a35 !important;
+}
+
 
 /*CSS fix for sticky hover*/
 @media (hover:hover) {
