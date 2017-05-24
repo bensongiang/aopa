@@ -4,7 +4,7 @@
     // Default options
     var defaults = {
       items: '.item-tagsort',
-      tagElement: 'span',
+      tagElement: 'a',
       selectedTags: [],
       tagClassPrefix: false,
       itemTagsView: false,
@@ -24,7 +24,7 @@
         var tags_inclusive = {},
             tags_exclusive = {pointers: [], tags: []},
             tagElement = $(document.createElement(tagSortEngine.options.tagElement));
-            tagElement.attr('onclick', 'void(0)');
+            //tagElement.attr('onclick', 'void(0)');
         // Loop through tagged elements
         tagSortEngine.container.html('');
         tagSortEngine.elements.each(function(i) {

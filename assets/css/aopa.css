@@ -287,9 +287,10 @@ input[type="color"]:focus,
   outline: 0 none;
 }
 
-.tags-container span {
+.tags-container a {
 	display: inline-block;
     border: 2px solid #e2e2e2;
+    text-decoration: none;
     color: #9B9B9B;
     font-size: 14px;
     line-height: 10px;
@@ -305,7 +306,7 @@ input[type="color"]:focus,
     transition: all .2s ease-in-out;
 }
 
-.tags-container span:active {
+.tags-container a:active {
 	background: #6a9a35 !important;
 	border-color: #6a9a35 !important;
 }
@@ -313,7 +314,7 @@ input[type="color"]:focus,
 
 /*CSS fix for sticky hover*/
 @media (hover:hover) {
-	.tags-container span:hover {
+	.tags-container a:hover {
 		color: #ffffff;
 	    background: #9ADA53;
 	    border-color: #9ADA53;
@@ -321,14 +322,14 @@ input[type="color"]:focus,
 }
 
 @media (hover:none) {
-	.tags-container span:hover {
+	.tags-container a:hover {
 	    color: #9B9B9B;
 	    background: #ffffff;
 	    border-color: #9B9B9B;
 	}
 }
 
-span.tagsort-active, span.active  {
+a.tagsort-active, a.active  {
 	color: #ffffff;
     background: #9ADA53;
 	border-color: #9ADA53;
@@ -427,7 +428,7 @@ a:focus, a:hover {
 	.content {
 		margin-bottom: 525px;
 	}
-	.tags-container span {
+	.tags-container a {
 	    font-size: 16px;
 	    padding: 10px 15px;
 	    border-radius: 20px;
