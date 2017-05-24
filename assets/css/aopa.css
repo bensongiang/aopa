@@ -309,13 +309,14 @@ input[type="color"]:focus,
 .tags-container a:active {
 	background: #6a9a35 !important;
 	border-color: #6a9a35 !important;
+	color: #ffffff !important;
 }
 
 
 /*CSS fix for sticky hover*/
 @media (hover:hover) {
 	.tags-container a:hover {
-		color: #ffffff;
+		color: #ffffff !important;
 	    background: #9ADA53;
 	    border-color: #9ADA53;
 	}
@@ -330,7 +331,7 @@ input[type="color"]:focus,
 }
 
 a.tagsort-active, a.active  {
-	color: #ffffff;
+	color: #ffffff !important;
     background: #9ADA53;
 	border-color: #9ADA53;
 }
