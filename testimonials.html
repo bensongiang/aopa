@@ -34,9 +34,11 @@
     <script src="assets/js/w3data.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/tagsort.js"></script>
+    <script type="application/javascript" src="assets/js/fastclick.js"></script>
 
     <script type="text/javascript">
       $(function(){
+        FastClick.attach(document.body);
         $('div.tags-container').tagSort({items:'.item', tagElement:'a', tagClassPrefix:'tagsort-', itemTagsView:'.item-tags', itemTagsSeperator:' / ', sortType:'inclusive', fadeTime: 0});
         var showChar = 225;  // How many characters are shown by default
         var ellipsestext = "...";
